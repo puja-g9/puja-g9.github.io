@@ -149,14 +149,14 @@ h3 {
     margin: 0.5em 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 100%) {
     .user-info div {
         width: 45%;
         text-align: left;
     }
 
     .repo-list {
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .repo-list li {
