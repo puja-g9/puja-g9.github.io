@@ -1,7 +1,16 @@
 <html lang="en">
 
 <head>
+
 <title>Research</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<script src="script.js" defer></script>
+
+
 <style>
 :root {
     -moz-tab-size: 4;
@@ -52,11 +61,8 @@ body {
     border-color: initial;
 }
 img {
-    align-self:center;
     border-style: solid;
 	pointer-events: all;
-	margin-top:30px;
-	margin-bottom:30px;
 }
 input::-moz-placeholder {
     color: #a1a1aa;
@@ -222,13 +228,16 @@ h1 {
     font-size: 1.875rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+	overflow-wrap: anywhere;
 }
 h2 {
     font-size: 1.5rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
+	overflow-wrap: anywhere;
 }
 h3 {
+    overflow-wrap: anywhere;
     font-size: 1.25rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -236,15 +245,6 @@ h3 {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
-
-p {
-    text-align: justify;
-}
-
-p1 {
-    text-align: center;
-}
-
 .markdown {
     font-size: 1.125rem;
 }
@@ -281,13 +281,12 @@ p1 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 1rem;
-    padding: 20px;
+    padding: 0;
     padding: .5rem;
     font-style: italic;
 }
 .markdown blockquote>p {
     margin-bottom: 0;
-	padding: 5px;
 }
 .markdown table {
     border-collapse: collapse;
@@ -498,7 +497,7 @@ canvas {
   position: absolute;
   align-self: center;
   width: 100%;
-  height: 450%;
+  height: 100%;
   background: $background
   
 }
@@ -561,7 +560,7 @@ a:focus {
 <div id="particles-js">
 
 <div id="toplayer" class="w-full_main">
-<header class="w-full px-8 pt-5" style="position: relative;top: 0;border-bottom-width: 0px; padding-bottom: 30px">
+<header class="w-full px-8 pt-5">
 <nav class="flex flex-row-reverse items-center flex-wrap text-lg">
 <input id="nav-toggle" type="checkbox" class="hidden">
 <label id="hide-button" for="nav-toggle" class="flex items-center hidden">
@@ -612,8 +611,8 @@ a:focus {
 </header>
 
 
-<main class="w-full px-8 pt-5">
-
+    <main class="container">
+        <section class="repos">
 <article class="markdown"><h1>Research</h1>
 <center>
 <br>
@@ -690,11 +689,8 @@ properly. Additionally, CPU utilization techniques, VM consolidation, and perfor
 <br>
 
 </article>
-
-
-
-</main>
-</div>
+        </section>
+    </main>
 
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7951dde4bff53adc&quot;,&quot;token&quot;:&quot;8cffec5803864b5dad240756e720c736&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
 
@@ -711,10 +707,10 @@ properly. Additionally, CPU utilization techniques, VM consolidation, and perfor
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 80,
       "density": {
         "enable": true,
-        "value_area": 500 } },
+        "value_area": 700 } },
 
 
     "color": {
@@ -753,14 +749,14 @@ particlesJS("particles-js", {
 
     "line_linked": {
       "enable": true,
-      "distance": 160,
+      "distance": 150,
       "color": "#00ff00",
       "opacity": 0.1,
       "width": 1 },
 
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
