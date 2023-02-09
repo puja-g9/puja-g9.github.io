@@ -99,6 +99,7 @@ input {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-bottom: 4em;
+    width: 100%;
 }
 
 h3 {
